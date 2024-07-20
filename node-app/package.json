@@ -1,0 +1,13 @@
+{
+  "name": "big_bubble_sort",
+  "version": "1.0.0",
+  "description": "Bubble sort large array",
+  "author": "Elvir Vlahovljak",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}

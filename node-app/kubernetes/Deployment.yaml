@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-bubble-deployment
+  labels:
+    app: node-bubble-deployment
+spec:
+  selector:
+    matchLabels:
+      app: node-bubble-deployment
+  template:
+    metadata:
+      labels:
+        app: node-bubble-deployment
+    spec:
+      containers:
+      - name: node-bubble
+        imagePullPolicy: Never
+        image: elva/dipl
+        ports:
+        - containerPort: 8080
+        resources:
+          limits:
+            cpu: 400m
+          requests:
+            cpu: 300m
